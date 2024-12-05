@@ -38,14 +38,17 @@ fetch('https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
         hh2.textContent = data.propositionDeValeur;
         header.appendChild(hh2);
 
-        
+        let divpromesse2 = document.createElement("div")
+        divpromesse2.className = "divpromesse2"
+        promesse.appendChild(divpromesse2);
         // Section promesse
         data.promessesClients.forEach(element => {
             let divpromesse = document.createElement("div");
+            divpromesse.className = "divpromesse"
             promesse.appendChild(divpromesse);
             let divpara1 = document.createElement("p");
             divpara1.textContent = element
-            promesse.appendChild(divpara1);
+            divpromesse.appendChild(divpara1);
             
             
             
@@ -54,15 +57,19 @@ fetch('https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
         });
 
         // bouton de devis
+        let divbouton = document.createElement("div");
+        divbouton.className = "divbouton";
+        promesse.appendChild(divbouton);
         let ha = document.createElement("a");
         ha.href =
         ha.textContent = data.texteBouton;
-        promesse.appendChild(ha);
+        divbouton.appendChild(ha);
 
 
         // faire un foreach du tableau de realisation
         data.realisations.forEach(element => {
             let divre = document.createElement("div");
+            divre.className = "divre"
             produit.appendChild(divre)
             let h3produit = document.createElement("h3")
             h3produit.textContent = element.titre;
@@ -71,6 +78,7 @@ fetch('https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
             description.textContent = element.description
             divre.appendChild(description);
             let imgR = document.createElement("img");
+            imgR.className = "img"
             imgR.src = element["image-url"];
             divre.appendChild(imgR)
             
@@ -81,6 +89,7 @@ fetch('https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
         // faire un foreach du tableau de temoignage 
         data.temoignages.forEach(element => {
             let divte = document.createElement("div");
+            divte.className = "divte"
             temoignage.appendChild(divte);
             let typeprestation = document.createElement("p");
             typeprestation.textContent = element.typePrestation;
@@ -92,7 +101,7 @@ fetch('https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
             prenom.textContent = element.prenom
             divte.appendChild(prenom);
             let note = document.createElement("p")
-            note.textContent = `Il nous as attribué la note de ${element.note}/5 !`
+            note.textContent = `Nous as attribué la note de ${element.note}/5 !`
             divte.appendChild(note);
 
             
