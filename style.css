@@ -1,29 +1,69 @@
-body{
-    background-color: #FEFDFB;
+/* j'ai passé toute la soirée desssus stp sois gentille */
+
+
+body {
+    background-color: #321C16;
 }
 
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    border: #321c16;
+    border-style: double;
+    padding: 39px;
+    text-align: center;
+}
 
+h1 {
+    font-family: "Cinzel", serif;
+    color: #321C16;
+    font-size: 79px;
+}
 
+h2 {
+    font-family: "Cinzel", serif;
+    color: #A67F5D;
+    font-size: 68px;
+}
+
+h3 {
+    font-family: "Cinzel", serif;
+    color: #321C16;
+    font-size: 27px;
+}
 
 nav {
+    height: 138px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #592918;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
+    background-color: #BF8755;
+    box-shadow: 0 8px 10px rgb(28, 14, 10);
 }
 
 
+a {
+    font-size: 40px;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    color: #321c16;
+}
 
-main{
+a:hover {
+    font-size: 300%;
+    transition: 0.5s;
+    border-bottom: solid #321C16;
+
+}
+
+main {
     margin: 25px;
 }
 
 #header {
     text-align: center;
     margin-bottom: 100px;
+    margin-top: 100px;
 }
 
 
@@ -34,11 +74,12 @@ main{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    
+
 }
 
-.divpromesse2{
+.divpromesse2 {
     display: flex;
+    padding: 20px;
 }
 
 .divpromesse {
@@ -46,24 +87,50 @@ main{
     align-items: center;
     flex-direction: column;
     background-color: #A67F5D;
-    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 8px 10px rgb(28, 14, 10);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 457px;
-    
+
+
+}
+
+#ha{
+    font-size: 30px;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    color: #321c16;
+    text-align: center;
     
 }
 
+#ha:hover{
+    font-size: 200%;
+    transition: 0.7s;
+    border-bottom: solid #321C16;
+}
 
-.divbouton{
+
+.divbouton {
     background-color: #A67F5D;
-    height: 50px;
-    width: 100px;
-    border-radius: 8px;
+    border-radius: 20px;
+    height: 110px;
+    width: 360px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 75px;
 }
 
-#promesse{
+
+.divbouton:hover{
+    background-color: goldenrod;
+    transition: 0.7s;
+}
+
+#promesse {
     margin-bottom: 100px;
     flex-direction: column;
 }
@@ -73,39 +140,48 @@ main{
     align-items: center;
     flex-direction: column;
     background-color: #A67F5D;
-    border-radius: 8px;
+    height: 525px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 400px;
-    height: 400px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 35px;
+    box-shadow: 0 8px 10px rgb(28, 14, 10);
 
 }
-#produit{
+
+#produit {
     margin-bottom: 100px;
 }
+
 .divte {
     display: flex;
     align-items: center;
     flex-direction: column;
     background-color: #A67F5D;
-    border-radius: 8px;
     width: 400px;
-    height: 300px;
+    height: 590px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
+    box-shadow: 0 8px 10px rgb(28, 14, 10);
 
 }
 
-#temoignage{
+#temoignage {
     margin-bottom: 100px;
-    
+    height: 800px;
+
 }
 
 .img {
     width: 200px;
     height: 200px;
-    
+
+}
+
+footer {
+    background-color: #A67F5D;
+    padding: 50px;
 }
